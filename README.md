@@ -1,25 +1,37 @@
+# 🔄 Simulador Round Robin - Escalonamento de Processos
+
+[![Sistemas Operacionais](https://img.shields.io/badge/Disciplina-Sistemas_Operacionais-blue.svg)](https://github.com)
+[![Python](https://img.shields.io/badge/Python-3.x-green.svg)](https://python.org)
+[![Algoritmo](https://img.shields.io/badge/Algoritmo-Round_Robin-orange.svg)](https://pt.wikipedia.org/wiki/Round_robin_(ci%C3%AAncia_da_computa%C3%A7%C3%A3o))
+
+> ⚡ **"Justiça no compartilhamento da CPU, um quantum de cada vez!"**
 
 ---
 
-### 💡 Como Usar Este README:
+## 🎯 Visão Geral
 
-1. **Salve** o conteúdo acima como `README.md`
-2. **Visualize** no GitHub, GitLab ou usando extensões de Markdown no VSCode
-3. **Personalize** adicionando:
-   - Seu nome
-   - Screenshots da execução real
-   - Mais exemplos de saída
-4. **Adicione badges** extras se desejar
+Este projeto implementa uma **simulação didática** do algoritmo de escalonamento **Round Robin (RR)** , um dos mais importantes e justos algoritmos utilizados em sistemas operacionais modernos.
 
-### 🎨 Recursos Interativos do README:
+### 📊 Cenário Simulado
 
-| Elemento | Função |
-|----------|--------|
-| 📊 **Tabelas** | Organização de dados |
-| 🎨 **Badges** | Indicadores visuais |
-| 📈 **Mermaid diagrams** | Linha do tempo e fluxogramas |
-| 💬 **Emojis** | Tornam a leitura mais leve |
-| 🔗 **Links** | Referências externas |
-| 🎯 **Checklists** | Conceitos abordados |
+| Processo | Tempo Total (ut*) | Quantum |
+|----------|-------------------|---------|
+| **P1**   | 10 unidades       | 2 ut    |
+| **P2**   | 5 unidades        | 2 ut    |
+| **P3**   | 8 unidades        | 2 ut    |
 
-Este README transforma a documentação técnica em uma **experiência visual agradável** e **didática**! 🚀
+> *ut = unidades de tempo (ex: milissegundos, ticks de CPU)
+
+---
+
+## 🧠 Como Funciona o Round Robin?
+
+```mermaid
+graph LR
+    A[Fila de Prontos] --> B[Pega 1º processo]
+    B --> C[Executa por 1 quantum]
+    C --> D{Terminou?}
+    D -->|Sim| E[Processo finalizado]
+    D -->|Não| F[Volta ao final da fila]
+    F --> A
+    E --> A
