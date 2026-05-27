@@ -26,7 +26,7 @@ Este projeto implementa uma **simulação didática** do algoritmo de escaloname
 
 ## 🧠 Como Funciona o Round Robin?
 
-
+```mermaid
 graph LR
     A[Fila de Prontos] --> B[Pega 1º processo]
     B --> C[Executa por 1 quantum]
@@ -38,11 +38,11 @@ graph LR
 
 ### 🔑 Características Principais
 Característica	Descrição
-## 🎪 Alternância Cíclica	Processos se revezam em uma fila circular
-## ⏲️ Preemptivo	Processo é interrompido após o quantum
-## ⚖️ Justo	Todos recebem a mesma fatia de tempo
-## 📱 Responsivo	Ideal para sistemas interativos
-##🚀 Executando a Simulação
+ 🎪 Alternância Cíclica	Processos se revezam em uma fila circular
+ ⏲️ Preemptivo	Processo é interrompido após o quantum
+ ⚖️ Justo	Todos recebem a mesma fatia de tempo
+ 📱 Responsivo	Ideal para sistemas interativos
+🚀 Executando a Simulação
 Pré-requisitos
 Python 3.x instalado
 
