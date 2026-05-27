@@ -26,7 +26,7 @@ Este projeto implementa uma **simulação didática** do algoritmo de escaloname
 
 ## 🧠 Como Funciona o Round Robin?
 
-```mermaid
+
 graph LR
     A[Fila de Prontos] --> B[Pega 1º processo]
     B --> C[Executa por 1 quantum]
