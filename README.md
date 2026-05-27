@@ -267,4 +267,4 @@ Se este material te ajudou a entender Round Robin, dê uma ⭐ no repositório!
 
 ---
 
-## 🎓 Desenvolvido para a disciplina de DESENVOLVER SIMULADOR DE ABSTRAÇÕES DE RECURSOS DE S.O
+## 🎓 Desenvolvido para a disciplina de Desenvolver Simulador de Abstrações de Recursos de S.O
